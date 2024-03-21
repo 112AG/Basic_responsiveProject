@@ -113,6 +113,12 @@ nav i{
     nav h1{
         font-size: 6vw;
     }
+    nav h1:hover{
+        font-size: 6vw;
+        text-shadow: 1px 1px 11px white;
+        letter-spacing: 0.1vw;
+        cursor: pointer;
+    }
     .list a{
         display: none;
     }
