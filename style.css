@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(beautiful-shot-rocky-mountains-covered-with-white-snow.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+nav{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    background-color: rgba(128, 128, 128, 0.466);
+}
+nav h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.2vw;
+    font-weight: 900;
+    transition: 0.2s;
+}
+nav h1:hover{
+    text-shadow: 1px 1px 11px white;
+    letter-spacing: 0.1vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+nav .list{
+    display: flex;
+    width: 35%;
+    gap: 2vw;
+}
+.list a:nth-child(1){
+    background-image: linear-gradient(to bottom right, grey, black 75%);
+}
+.list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.764);
+    font-size: 1.4vw;
+    font-weight: 500;
+    border: 1.4px solid black;
+    padding: 0.5vw 0.9vw;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.list a:hover{
+    text-shadow: 1px 1px 20px white;
+    font-weight: 500;    
+    background-image: linear-gradient(to bottom right, grey, black 75%);
+    box-shadow: 2px 2px 3px black, -2px -2px 3px black;
+}
+nav i{
+    display: none;
+}
+.cont{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 70%;
+}
+.cont h3{
+    font-size: 7vw;
+    letter-spacing: -0.7px;
+    color: white;
+    margin: -1.5% 0%;    
+    font-weight: 700;
+}
+.cont h2{
+    font-size: 8vw;
+    letter-spacing: -0.7px;
+    color: white;
+    font-weight: 700;
+}
+.cont p {
+    color: white;
+    opacity: 0.7;
+    padding-bottom: 2vw;
+}
+.cont button{
+    padding: 1vw 2vw;
+    border-radius: 25px;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
+}
+.cont button:hover{
+    font-weight: 500;    
+    background-image: linear-gradient(to bottom right, grey,transparent, black 75%);
+    box-shadow: 1px 1px 2px black, -2px -2px 3px black;
+}
+@media (max-width: 500px){
+    nav {
+        width: 100%;
+        min-height: 11vw;
+    }
+    nav h1{
+        font-size: 6vw;
+    }
+    .list a{
+        display: none;
+    }
+    nav i{
+        display: initial;
+        font-size: 5vw;
+        color: white;
+        cursor: pointer;
+    }
+    .cont{
+        width: 90%;
+    }
+    .cont h3{
+        font-size: 12vw;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .cont h2{
+        font-size: 15vw;
+    }
+    .cont p{
+        font-size: 3.9vw;
+        opacity: 0.9;
+        padding: 3vw 0vw;
+    }
+    .cont button{
+        padding: 2.5vw 4vw;
+        border-radius: 25px;
+
+    }
+}
